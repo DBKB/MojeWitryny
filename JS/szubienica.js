@@ -32,7 +32,7 @@ var baza = [
     "Mądry Polak po errorze",
     "Nie wszystko dioda co się świeci",
     "komu w drogę temu czas"
-]
+];
 
 
 

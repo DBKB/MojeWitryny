@@ -1,36 +1,3 @@
-@font-face {
-    font-family: 'latobold';
-    src: url('/Pliki/Czciaka/lato-bold-webfont.woff2') format('woff2'),
-         url('/Pliki/Czciaka/lato-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'latoitalic';
-    src: url('/Pliki/Czciaka/lato-italic-webfont.woff2') format('woff2'),
-         url('/Pliki/Czciaka/lato-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'latoregular';
-    src: url('/Pliki/Czciaka/lato-regular-webfont.woff2') format('woff2'),
-         url('/Pliki/Czciaka/lato-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body
 {
     font-family: latoregular;
@@ -46,7 +13,7 @@ body
 
 .view
 {
-    background-image: url("/Pliki/Obrazki/TloGora2.jpg");
+    background-image: url("Pliki/Obrazki/TloGora2.jpg");
     /* Obrazek ten przedstawia płytkę elektroniczną pcb 
     w kształcie głowy xenomorfa z filmu alien/
     8 nazłogant nostromo */
