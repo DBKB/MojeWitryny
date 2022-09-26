@@ -163,9 +163,9 @@ function start()
 {
     document.getElementById("szubienica").innerHTML ='<img id="szubienica" src="Pliki/Obrazki/s1.jpg" style="height: 100px;">';
     document.getElementById("Poziom").innerText=punkty;
-    for(i=0; i<35; i++)
+    for(i=0; i<litery.length; i++)
     {
-        if((i+1)%7==0)
+        if((i)%7==0)
         {
             document.getElementById("alfabet").innerHTML+='<div class="litera" id="'+litery[i]+'" onclick="odkryj(\''+litery[i]+'\')" style="clear:both;" >'+litery[i]+'</div>';
         }
