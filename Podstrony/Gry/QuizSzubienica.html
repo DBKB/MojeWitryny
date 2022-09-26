@@ -21,11 +21,12 @@
             </div>
             <div id="alfabet"></div>
             <div class="kontrola">
-                <h1 onclick="Restart()">Następne hasło</h1>
-                </br>
-                <h1>Wynik:</h1></h1><h1 id="Poziom"></h1>
+                
             </div>
         </div>
+        <h1 onclick="Restart()">Następne hasło</h1>
+            </br>
+        <h1>Wynik:</h1></h1><h1 id="Poziom"></h1>
     </body>
 
     <script>
@@ -77,7 +78,7 @@ var dlugosc = haslo.length;
 var punkty=0;
 var punktyStare=0;
 
-var litery = new Array(35);
+var litery = new Array(36);
 
 var ok = new Audio("Pliki/Dzwieki/Ok.wav");
 var bad = new Audio("Pliki/Dzwieki/Bad.wav");
@@ -117,6 +118,7 @@ litery[31] = "Y";
 litery[32] = "Z";
 litery[33] = "Ż";
 litery[34] = "Ź";
+litery[35] = "!";
 
 function Los()
 {
@@ -192,11 +194,13 @@ window.onload = start;
 
 function start()
 {
+    var kolumny=7;
     document.getElementById("szubienica").innerHTML ='<img id="szubienica" src="Pliki/Obrazki/s1.jpg" style="height: 100px;">';
     document.getElementById("Poziom").innerText=punkty;
-    for(i=0; i<35; i++)
+    if (navigator.appVersion.indexOf("android")!=-1) kolumny=4;
+    for(i=0; i<litery.length; i++)
     {
-        if((i+1)%7==0)
+        if(i%kolumny==0)
         {
             document.getElementById("alfabet").innerHTML+='<div class="litera" id="'+litery[i]+'" onclick="odkryj(\''+litery[i]+'\')" style="clear:both;" >'+litery[i]+'</div>';
         }

@@ -165,9 +165,9 @@ function start()
     document.getElementById("Poziom").innerText=punkty;
     for(i=0; i<litery.length; i++)
     {
-        if((i)%7==0)
+        if((i%5)==0)
         {
-            document.getElementById("alfabet").innerHTML+='<div class="litera" id="'+litery[i]+'" onclick="odkryj(\''+litery[i]+'\')" style="clear:both;" >'+litery[i]+'</div>';
+            document.getElementById("alfabet").innerHTML+='<div class="litera" id="'+litery[i]+'" onclick="odkryj(\''+litery[i]+'\')" style="clear:both;" >'+litery[i]+'</div></br>';
         }
         else
         {
