@@ -1,0 +1,65 @@
+body
+{
+    background-color: tomato;
+}
+img
+{
+    min-height:  300px;
+}
+span
+{
+    cursor: pointer;
+}
+#pojemnik
+{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#plansza
+{
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    min-width: 60px;
+}
+#szubienica
+{
+    float: left;
+    width: 450;
+    text-align: center;
+    min-width: 200px;
+    border-radius: 10px;
+}
+#alfabet
+{
+    float: left;
+    width: 450;
+    text-align: center;
+}
+.litera
+{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 40px;
+    border: 5px solid rgb(44, 16, 3);
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#litera:hover
+{
+    color: wheat;
+    border: 6px solid gray;
+}
+
+.kontrola
+{
+    float: left;
+}

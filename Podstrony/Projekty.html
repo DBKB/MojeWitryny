@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <title>MojeWitryny</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/styl.css">
+        <script src="../JS/Jqery.js"></script>
+        <script src="../JS/Kafle.js"></script>
+        <script src="../JS/stopka.js"></script>
+    </head>
+
+    <body>
+        <div class="view">
+        
+            <div class="menu">
+                <h2>
+                    <a href="../index.html">Strona Główna</a>
+                </h2>
+            </div>
+
+        </br>
+        </div>
+
+        <div class="content" id="content">
+
+            <script>
+                var todoo = new Kafla('ToDoApp','Prosta aplikacja do zapamiętywania','todoo.jpg','WBudowie.html');
+                var memoryGame = new Kafla('MemoryMaster','Prosta gra do ćwiczenia pamięci','memopryMasrter.jpg','WBudowie.html');
+                var reaktorAtom = new Kafla('Reaktor','Gra fabularna, śmieszna o elektrowni atomowej','atom.jpg','WBudowie.html');
+                var mikroPanstwa = new Kafla('UState','W tej grze prowadzisz swoje mikro państwo i jego ekonomię','MikroPanstwa.jpg','WBudowie.html');
+                var rpg = new Kafla('ToDoApp','Gra crpg, gra o prostej oprawie graficznej(środowisko testowe)','rpgSrodowiskoTestowe.jpg','WBudowie.html');
+                var taStrona = new Kafla('SerwisWWW','Prosty, modelowy serwis z loggerem','TloGora2.jpg','/Podstrony/Projekty/TaStrona.html');
+                
+                todoo.wyswietl('../Pliki/Obrazki/Projekty/');
+                memoryGame.wyswietl('../Pliki/Obrazki/Projekty/');
+                reaktorAtom.wyswietl('../Pliki/Obrazki/Projekty/');
+                mikroPanstwa.wyswietl('../Pliki/Obrazki/Projekty/');
+                rpg.wyswietl('../Pliki/Obrazki/Projekty/');
+                taStrona.wyswietl('../Pliki/Obrazki/');
+            </script>
+            <h2>
+                I wiele innych mikroprojektów jak kalkulatory, 
+                proste aplikacje łączące się z bazą danych i ect...
+            </h2>
+        </div>
+    
+    
+    
+    <footer id="stopka">stopka</footer>
+
+    
+</body>
+
+</html>
