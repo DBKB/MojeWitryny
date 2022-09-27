@@ -48,8 +48,10 @@ body
     justify-content: center;
     align-items: center;
 
-    position: absolute;
-    bottom: 10%;
+    position: fixed;
+    top: 2%;
+
+    z-index: 1;
 }
 
 .content
